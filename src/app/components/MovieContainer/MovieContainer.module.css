@@ -38,6 +38,24 @@
   padding: 24px;
 }
 
+.noMovieContainer {
+  text-align: center;
+}
+
+.noMovieTitle {
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+  cursor: default;
+}
+
+.noMovieSubtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #7A8C99;
+  cursor: default;
+}
+
 @media (max-width: 1200px) {
   .imageAndTextContainer {
     grid-template-columns: repeat(3, 1fr);

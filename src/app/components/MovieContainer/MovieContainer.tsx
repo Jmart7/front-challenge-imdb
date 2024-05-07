@@ -32,14 +32,18 @@ export const MovieContainer = ({ listOfMovies, handleClickMovie } : any) => {
         </div>
       ) : (
         <div className={styles.noMovieContainer}>
-          <Image
-            src="/no-movie.svg"
-            alt="No Movie found"
-            className={styles.noMovieLogo}
-            width={442}
-            height={442}
-            priority
-          />
+          <div>
+            <Image
+              src="/no-movie.svg"
+              alt="No Movie found"
+              className={styles.noMovieLogo}
+              width={442}
+              height={442}
+              priority
+            />
+          </div>
+          <div className={styles.noMovieTitle}>Don&apos;t know what to search?</div>
+          <div className={styles.noMovieSubtitle}>Here&apos;s an offer you can&apos;t refuse</div>
         </div>
       )}
     </div>
