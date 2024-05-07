@@ -1,0 +1,57 @@
+.movieContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.imageAndTextContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.movieImage {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.movieImage:hover {
+  transform: scale(1.1); /* un zoom solo para que quede lindo */
+}
+
+.noMovieLogo {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 24px;
+}
+
+@media (max-width: 1200px) {
+  .imageAndTextContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .imageAndTextContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .imageAndTextContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

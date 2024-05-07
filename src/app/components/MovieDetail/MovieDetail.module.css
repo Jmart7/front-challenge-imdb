@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 30px;
+}
+
+.backButton {
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.movieDataTitle {
+  font-size: 67px;
+  color: #FFFFFF;
+  padding: 0px;
+  margin: 0px;
+}
+
+.belowTitleInfo {
+  color: #7A8C99;
+  font-size: 14px;
+}
+
+.criticReview {
+  display: flex;
+  gap: 13px;
+  padding: 20px 0px;
+}
+
+.reviewValue {
+  align-content: center;
+  font-size: 18px;
+}
+
+.graySubtitle {
+  color: #7A8C99;
+  font-size: 18px;
+}
+
+.movieHeader {
+  display: flex;
+  gap: 41px;
+}
+
+.castColumns {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.poster {
+  width: 300px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
