@@ -19,7 +19,6 @@ export default function Home() {
     try {
       const data = await getMoviesFromSearch(value);
       setListOfMovies(data);
-      console.log(data);
     } catch (error) {
       console.error(error);
     }
@@ -36,14 +35,12 @@ export default function Home() {
       const data = await getMoviesFromID(imdbID);
       setMovieData(data);
       setShowMovieDetails([imdbID, true]);
-      console.log(data);
     } catch (error) {
       console.error(error);
     }
   };
 
   const handleClickBack = () => {
-    console.log('click back');
     setShowMovieDetails([null, false]);
     setMovieData(null);
   };
