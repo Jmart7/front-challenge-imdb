@@ -2,9 +2,9 @@ import styles from "./MovieContainer.module.css";
 import Image from "next/image";
 import { useState } from "react";
 
-export const MovieContainer = ({ listOfMovies, handleClickMovie }) => {
+export const MovieContainer = ({ listOfMovies, handleClickMovie } : any) => {
 
-  const handleClick = (imdbID) => () => {
+  const handleClick = (imdbID : any) => () => {
     console.log('click movie')
     handleClickMovie(imdbID);
   };
@@ -13,7 +13,7 @@ export const MovieContainer = ({ listOfMovies, handleClickMovie }) => {
     <div className={styles.movieContainer}>
       {listOfMovies && listOfMovies.length > 0 ? (
         <div className={styles.imageAndTextContainer}>
-          {listOfMovies.slice(0,8).map((movie) => {
+          {listOfMovies.slice(0,8).map((movie : any) => {
             return (
               <div className={styles.card} key={movie.imdbID} onClick={handleClick(movie.imdbID)}>
                 <a>

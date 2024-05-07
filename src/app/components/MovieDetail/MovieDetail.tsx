@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./MovieDetail.module.css";
 import { MovieComments } from "../MovieComments/MovieComments";
 
-export const MovieDetail = ({ movieData, handleClickBack }) => {
+export const MovieDetail = ({ movieData, handleClickBack } : any) => {
   if (!movieData) return <div>Loading...</div>;
 
   const renderList = (data : string, className : string) =>
