@@ -25,13 +25,13 @@ export default function Home() {
     }
   }, 500), []);
 
-  const handleSearch = (event) => {
+  const handleSearch = (event : any) => {
     const value = event.target.value;
     debouncedSearch(value);
   };
 
 
-  const handleClickMovie = async (imdbID) => {
+  const handleClickMovie = async (imdbID : any) => {
     try {
       const data = await getMoviesFromID(imdbID);
       setMovieData(data);

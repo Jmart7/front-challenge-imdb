@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { CommentStructure } from './MovieComments.interface';
 import { format, formatDate } from 'date-fns';
 
-export const MovieComments = ({imdbID}) => {
+export const MovieComments = ({imdbID} : any) => {
   const [comments, setComments] = useState<CommentStructure[]>([]);
   const [newComment, setNewComment] = useState('');
 
